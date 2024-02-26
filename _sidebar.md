@@ -1,6 +1,6 @@
 <!-- 侧边栏 docs/_sidebar.md -->
 
-- **介绍**
-  - [1. Introduction](README.md)
+- **Python基础**
+  - [1. 名称空间](基础知识/名称空间.md)
 
  
