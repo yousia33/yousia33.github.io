@@ -1,9 +1,14 @@
-def foo(x):
-    def go(y):
-        nonlocal x 
-        x=x+y
-        return x
-    return go
+def dec(func):
+    def wrapper(*args, **kwargs):
+        print('decorate')
+        res=func(*args, **kwargs)
+        return res
+        
+    return wrapper
 
-a=foo(100)
-print(a)
+@dec
+def test(x):
+    print('hahha'+str(x))
+    return x
+
+test(56)
