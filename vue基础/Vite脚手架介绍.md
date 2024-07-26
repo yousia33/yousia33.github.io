@@ -26,5 +26,3 @@ App.vue是根基，components div是枝叶
 3. style   样式
 
 启动：npm run dev
-
-# 创建代码片段
