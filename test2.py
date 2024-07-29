@@ -1,6 +1,15 @@
-class Riven:
-    camp = 'Noxus'
-    def __init__(self,nickname,aggressivity=54,life_value=414,money=1001,armor=3):
-        self.nickname=nickname
-        self.aggressivity=aggressivity
-        self.life_value
+class Foo:
+    def f1(self):
+        print('Foo.f1')
+
+    def f2(self):
+        print('Foo.f2')
+        self.f1()
+
+class Bar(Foo):
+    def f1(self):
+        print('bababaFoo.f1')
+
+
+b=Bar()
+b.f2()
